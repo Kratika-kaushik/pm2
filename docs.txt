@@ -1,0 +1,34 @@
+PM2 is node process manager which comes with load balancer. It allows to keep 
+application alive even when server is down 
+
+To start an application in wsl write 
+
+pm2 start app.js   --------->name of your application
+
+To check all logs 
+
+pm2 log
+
+To ccheck particular log
+
+pm2 log id/name
+
+To check for list in pm2
+
+pm2 ls or pm2 list
+
+To stop pm2 
+
+pm2 stop id/name
+
+If you made any changes inside app then you have to restart pm2 using
+
+pm2 restart app.js (enable watch to continuosuly )
+
+To delete or kill a application
+pm2 kill id/name
+pm2 kill
+
+To use pm2 using files
+pm2 ecosystem
+then after adding scripts use pm2 start ecosystem.config.js to start application

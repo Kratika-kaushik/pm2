@@ -1,0 +1,12 @@
+{
+    "apps":[
+        {
+            "name":"code",
+            "script":"./app2.js",
+            "watch":true,
+            "ignore_watch":["node_modules","public"],
+            "instances":1,
+            "exce_mode":"fork"
+        }
+    ]
+}
